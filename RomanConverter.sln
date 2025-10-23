@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanConverter", "RomanConverter\RomanConverter.csproj", "{DDDDAAB8-FC15-4313-AACD-4A79C1A46394}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDDDAAB8-FC15-4313-AACD-4A79C1A46394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDDAAB8-FC15-4313-AACD-4A79C1A46394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDDAAB8-FC15-4313-AACD-4A79C1A46394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDDAAB8-FC15-4313-AACD-4A79C1A46394}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

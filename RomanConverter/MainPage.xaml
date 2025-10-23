@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RomanConverter.MainPage" Title="Roman Numeral Converter"
+             BackgroundImageSource="numeral_background.png">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label Margin="0, 0, 0, 40" BackgroundColor="White" FontSize="18" Text = "Enter a Number to convert into a Roman Numeral or enter a Roman Numeral to convert to a number" />
+            <Border Stroke="Black" StrokeThickness="2">
+                <Entry x:Name = "txtInput" Placeholder="Enter a Value" TextTransform="Uppercase" TextChanged="TxtInput_OnTextChanged" BackgroundColor="White"/> </Border>
+            <Label x:Name="lblOutput" Text="---" FontSize="45" HorizontalOptions="Center" BackgroundColor="White" />
+            <Button x:Name = "btnClear" Text="Clear" Clicked="BtnClear_OnClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
