@@ -42,13 +42,17 @@ public partial class MainPage : ContentPage
         int yyy = lblOutput.Text.Length;
         if (yyy > 48) 
         {
-            //lblOutput.Text = "Value is too large to display";
-            
-            // Shortening numeral length
-             int notMPos = strResult.LastIndexOf("M");
-            string rest = strResult.Substring(notMPos + 1);
-            strResult = "M^" + (notMPos + 1) + rest;
-            
+            int notMPos = strResult.LastIndexOf("M");
+            if (notMPos != 0)
+            {
+                // Shortening numeral length
+                string rest = strResult.Substring(notMPos + 1);
+                strResult = "M^" + (notMPos + 1) + rest;
+            }
+            else
+            {
+                lblOutput.Text = "Value is too large to display";   
+            }
         }
         lblOutput.Text = strResult;
     }
